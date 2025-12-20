@@ -182,7 +182,7 @@
       }
 
       setTimeout(() => {
-          animateCounter('counter-students', 0);
+          // animateCounter('counter-students', 0);
           animateCounter('counter-projects', +10);
       }, 800);
 
