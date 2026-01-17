@@ -125,7 +125,7 @@
 
 
       const words = ["Personal Developement Skills", "Core Finance Skills", "Digital Enterprenuership Skills",
-          "Video Editing", "Content Creation", "Canva Branding", "Freelancing"
+          "Video Editing", "Content Creation", "Visual Branding", "Freelancing"
       ];
       let t = 0,
           i = 0,
