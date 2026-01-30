@@ -95,7 +95,7 @@
 
       window.addEventListener("DOMContentLoaded", function () {
 
-          const target = new Date("2026-01-31T14:00:00+01:00").getTime();
+          const target = new Date("2026-02-15T14:00:00+01:00").getTime();
 
           function updateCountdown() {
               const now = Date.now();
