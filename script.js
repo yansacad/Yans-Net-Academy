@@ -95,33 +95,35 @@
 
       window.addEventListener("DOMContentLoaded", function () {
 
-          const target = new Date("2026-02-15T14:00:00+01:00").getTime();
+    // 15th February 2026, 2:00 PM
+    const target = new Date("2026-02-15T14:00:00").getTime();
 
-          function updateCountdown() {
-              const now = Date.now();
-              const diff = target - now;
+    function updateCountdown() {
+        const now = Date.now();
+        const diff = target - now;
 
-              if (diff <= 0) {
-                  document.getElementById("yn-countdown-wrapper").innerHTML =
-                      "<h2>The Digital Hub is LIVE 🎉</h2>";
-                  return;
-              }
+        if (diff <= 0) {
+            document.getElementById("yn-countdown-wrapper").innerHTML =
+                "<h2>The Digital Hub is LIVE 🎉</h2>";
+            return;
+        }
 
-              const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-              const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-              const s = Math.floor((diff % (1000 * 60)) / 1000);
+        const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((diff % (1000 * 60)) / 1000);
 
-              document.getElementById("cd-days").textContent = d;
-              document.getElementById("cd-hours").textContent = h;
-              document.getElementById("cd-min").textContent = m;
-              document.getElementById("cd-sec").textContent = s;
-          }
+        document.getElementById("cd-days").textContent = d;
+        document.getElementById("cd-hours").textContent = h;
+        document.getElementById("cd-min").textContent = m;
+        document.getElementById("cd-sec").textContent = s;
+    }
 
-          updateCountdown();
-          setInterval(updateCountdown, 1000);
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
 
-      });
+});
+
 
 
       const words = ["Personal Developement Skills", "Core Finance Skills", "Digital Enterprenuership Skills",
