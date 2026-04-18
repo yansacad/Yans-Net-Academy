@@ -96,7 +96,7 @@
       window.addEventListener("DOMContentLoaded", function () {
 
     // 15th February 2026, 2:00 PM
-    const target = new Date("2026-02-18T14:00:00").getTime();
+    const target = new Date("2026-05-20T00:00:00").getTime();
 
     function updateCountdown() {
         const now = Date.now();
@@ -104,7 +104,7 @@
 
         if (diff <= 0) {
             document.getElementById("yn-countdown-wrapper").innerHTML =
-                "<h2>The Digital Hub is LIVE 🎉</h2>";
+                "<h2>The AI Launchpad is now Launched 🎉</h2>";
             return;
         }
 
