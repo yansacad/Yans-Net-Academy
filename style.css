@@ -301,6 +301,7 @@
     .btn {
       background: var(--mid-blue);
       color: #fff;
+      margin top: 10px;
       padding: 10px 16px;
       border-radius: 8px;
       border: none;
