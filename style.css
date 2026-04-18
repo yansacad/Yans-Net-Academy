@@ -768,6 +768,7 @@
     }
 
     .scroll-animate {
+      margin-top: 25px;
       opacity: 0;
       transform: translateY(40px);
       transition: all 1s ease-out;
