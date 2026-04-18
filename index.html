@@ -48,7 +48,7 @@
           <li><a href="https://yansacad.github.io/Yans-Net-Academy/#about">About Us</a></li>
           <li><a href="https://yansacad.github.io/Yans-Net-Academy/#programmes">Our Programmes</a>
           <li><a href="https://yansacad.github.io/Yans-Net-Academy/#register">Registration</a></li>
-          <li><a href="https://yansacad.github.io/Yans-Net-Academy/#digital">Digital Hub</a></li>
+          <li><a href="ai-launchpad">AI Launchpad</a></li>
           <li><a href="https://yansacad.github.io/Yans-Net-Academy/#contact">Contact</a></li>
           <li><a href="https://yansacad.github.io/Yans-Net-Academy/#faq">FAQ</a></li>
         </ul>
@@ -186,14 +186,15 @@
             </div>
 
             <input type="tel" name="Phone Number" id="phone" placeholder="Phone number" required />
-            <input type="text" name="Age" id="age" placeholder="Age (optional)" />
-            <input type="text" name="Occupation" id="occupation" placeholder="Occupation (optional)" />
+            <input type="text" name="Age" id="age" placeholder="Age" />
+            <input type="text" name="Occupation" id="occupation" placeholder="Occupation" />
             <input type="text" name="Past Experience" id="experience"
               placeholder="Have you taken any digital training before? (Yes/No)" />
-            <input type="text" name="Goal" id="goal" placeholder="What do you want to achieve with this training?" />
+            <input type="text" name="Goal" id="goal" placeholder="What do you want to achieve with this training?" required />
 
             <select name="Programme" id="programme" required>
               <option value="" disabled selected>Select a Training Track</option>
+              <option value="10-day">10-Day App with AI Launchpad</option>
               <option value="12-weeks">12-Weeks Skills Training</option>
               <option value="6-month">6-Month Smart Skills Training</option>
             </select>
@@ -236,92 +237,102 @@
     </div>
 
 
-    <section id="digital">
-      <div id="digital">
-        <h1 class="digital-headline">Digital Awareness Hub</h1>
-        <div id="yn-countdown-wrapper" class="countdown-wrapper">
+    <section id="ai-launchpad">
+  <div id="ai-launchpad">
+    
+    <h1 class="digital-headline">🚀 AI Launchpad</h1>
 
-          <h2 class="countdown">
-            Countdown to the Digital Hub
-          </h2>
+    <div id="yn-countdown-wrapper" class="countdown-wrapper">
+      <h2 class="countdown">
+        Countdown to AI Launchpad
+      </h2>
 
-          <div id="yn-countdown" class="nd-countdown">
-            <div class="cd-box">
-              <div class="cd-num" id="cd-days">--</div>
-              <div class="cd-label">Days</div>
-            </div>
-
-            <div class="cd-box">
-              <div class="cd-num" id="cd-hours">--</div>
-              <div class="cd-label">Hours</div>
-            </div>
-
-            <div class="cd-box">
-              <div class="cd-num" id="cd-min">--</div>
-              <div class="cd-label">Minutes</div>
-            </div>
-
-            <div class="cd-box">
-              <div class="cd-num" id="cd-sec">--</div>
-              <div class="cd-label">Seconds</div>
-            </div>
-          </div>
-          <h1 style="color: #ab0bf5;">18th February, 2026. 14:00 WAT</h1>
+      <div id="yn-countdown" class="nd-countdown">
+        <div class="cd-box">
+          <div class="cd-num" id="cd-days">--</div>
+          <div class="cd-label">Days</div>
         </div>
 
-        <div class="yn-section">
-
-          <div class="scroll-animate">
-            <h2 class="yn-title">A One-Day Public Enlightenment Event for a Digital Future</h2>
-
-            <p>
-              On the <b>18th February 2026</b>, Yan’s Net Academy will host the
-              <b>Digital Skill Mastery Hub</b> — a one-day enlightenment program introducing
-              the public to the complete digital-skill journey for the year.
-            </p>
-
-            <p>
-              This event is a gateway into the future of digital opportunities, helping you turn
-              skills into income and ideas into real careers.
-            </p>
-          </div>
-
-          <div class="scroll-animate">
-            <h3 class="yn-subtitle">Why You Should Attend</h3>
-
-            <ul class="yn-list">
-              <li><span class="icon">✔</span> Understand the entire digital-skill roadmap</li>
-              <li><span class="icon">✔</span> Learn how each skill becomes an income source</li>
-              <li><span class="icon">✔</span> Get clarity on our 2026 training structure</li>
-              <li><span class="icon">✔</span> Access early-bird registration</li>
-            </ul>
-          </div>
-
-          <div class="scroll-animate">
-            <h3 class="yn-subtitle">Who Should Attend?</h3>
-
-            <ul class="yn-list">
-              <li><span class="icon">•</span> Students & job seekers</li>
-              <li><span class="icon">•</span> Tech beginners</li>
-              <li><span class="icon">•</span> Working professionals seeking career upgrades</li>
-              <li><span class="icon">•</span> Anyone curious about digital income</li>
-            </ul>
-          </div>
-
-          <div class="yn-details scroll-animate">
-            <p>📅 <b>Date:</b> 18th February 2026</p>
-            <p>⏰ <b>Time:</b> 2:00 PM WAT</p>
-            <p>📍 <b>Venue:</b> YouTube <br> <strong style="margin-left: 25px;">YouTube Handle: @yansglobal</strong></p>
-            <p>🎯 <b>Audience:</b> Youth, parents, professionals & digital creators</p>
-          </div>
+        <div class="cd-box">
+          <div class="cd-num" id="cd-hours">--</div>
+          <div class="cd-label">Hours</div>
         </div>
 
-        <div class="yn-flyer-container">
-          <img src="Feb.png" alt="Digital Awareness Hub Flyer" class="yn-flyer">
+        <div class="cd-box">
+          <div class="cd-num" id="cd-min">--</div>
+          <div class="cd-label">Minutes</div>
         </div>
 
+        <div class="cd-box">
+          <div class="cd-num" id="cd-sec">--</div>
+          <div class="cd-label">Seconds</div>
+        </div>
       </div>
-    </section>
+
+      <h1 style="color:#FFC107;">Starting: 20th May, 2026</h1>
+    </div>
+
+    <div class="yn-section">
+
+      <div class="scroll-animate">
+        <h2 class="yn-title">Build & Launch AI Apps in Just 10 Days</h2>
+
+        <p>
+          The <b>AI Launchpad</b> is a powerful hands-on training designed to help you
+          go from beginner to building real AI-powered applications.
+        </p>
+
+        <p>
+          In just <b>10 days</b>, you will learn how to create, design, and launch your own
+          AI tools — even with <b>no coding experience</b>.
+        </p>
+      </div>
+
+      <div class="scroll-animate">
+        <h3 class="yn-subtitle">🔥 What You’ll Learn</h3>
+
+        <ul class="yn-list">
+          <li><span class="icon">✔</span> How AI apps actually work</li>
+          <li><span class="icon">✔</span> Building apps without coding</li>
+          <li><span class="icon">✔</span> AI content generation tools</li>
+          <li><span class="icon">✔</span> UI/UX design for modern apps</li>
+          <li><span class="icon">✔</span> Launching your app to real users</li>
+          <li><span class="icon">✔</span> Monetizing AI tools</li>
+        </ul>
+      </div>
+
+      <div class="scroll-animate">
+        <h3 class="yn-subtitle">🎯 Who Is This For?</h3>
+
+        <ul class="yn-list">
+          <li><span class="icon">•</span> Beginners with zero tech skills</li>
+          <li><span class="icon">•</span> Students & young creators</li>
+          <li><span class="icon">•</span> Entrepreneurs & freelancers</li>
+          <li><span class="icon">•</span> Anyone ready to earn with AI</li>
+        </ul>
+      </div>
+
+      <div class="yn-details scroll-animate">
+        <p>📅 <b>Start Date:</b> 20th May, 2026</p>
+        <p>⏳ <b>Duration:</b> 10 Days Intensive</p>
+        <p>💰 <b>Fee:</b> ₦7,000</p>
+        <p>🎁 <b>Bonus:</b> Refer 1 person & get 50% OFF</p>
+        <p>📍 <b>Mode:</b> Online (Phone Friendly)</p>
+      </div>
+
+      <div class="scroll-animate" style="text-align:center;">
+        <a href="#register" class="yn-btn">🚀 Enroll Now</a>
+      </div>
+
+    </div>
+
+    <!-- FLYER -->
+    <div class="yn-flyer-container">
+      <img src="ai.png" alt="AI Launchpad Flyer" class="yn-flyer">
+    </div>
+
+  </div>
+</section>
     <hr>
 
 
@@ -385,68 +396,144 @@ We’ll keep you updated with trainings, events, and opportunities.
 
 
     <section id="faq" class="fade-in">
-      <div class="container">
-        <h2 class="section-title">FAQ's</h2>
-        <div class="faq-item">
-          <details>
-            <summary>Do I need a laptop to learn?</summary>
-            <p>No — all core skills are phone-first and designed to work on smartphones using free apps.</p>
-          </details>
-        </div>
-        <div class="faq-item">
-          <details>
-            <summary>How long is each cohort?</summary>
-            <p>The core short track is 12 weeks; the extended academy is 6 months.</p>
-          </details>
-        </div>
-        <div class="faq-item">
-          <details>
-            <summary>Can I join from outside Nigeria?</summary>
-            <p>Yes — trainings are fully accessible from anywhere in the world.</p>
-          </details>
-        </div>
-        <div class="faq-item">
-          <details>
-            <summary>Will I work on real projects?</summary>
-            <p>Yes — every track includes practical tasks and at least 1 portfolio-ready project.</p>
-          </details>
-        </div>
-        <div class="faq-item">
-          <details>
-            <summary>Is previous experience required?</summary>
-            <p>No — our programs are beginner-friendly and include step-by-step guidance.</p>
-          </details>
-        </div>
-        <div class="faq-item">
-          <details>
-            <summary>How much does training cost?</summary>
-            <p>We offer tiered pricing and discounts; contact us for cohort pricing and payment plans.</p>
-          </details>
-        </div>
-        <div class="faq-item">
-          <details>
-            <summary>Do you provide certificates?</summary>
-            <p>Yes — graduates receive a Yan's‑Net Academy certificate and a portfolio endorsement that tells people
-              about you through a qrcode on the certificate.</p>
-          </details>
-        </div>
-        <div class="faq-item">
-          <details>
-            <summary>How do I get support after graduation?</summary>
-            <p>We provide alumni mentorship groups, job placement guidance, and a private community for continued
-              growth.</p>
-          </details>
-        </div>
-        <div class="faq-item">
-          <details>
-            <summary>What tools do I need?</summary>
-            <p>Just a smartphone and access to free apps like CapCut, Wix, Canva etc... We provide links and tutorials.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions (FAQs)</h2>
 
+    <div class="faq-item">
+      <details>
+        <summary>When does Yan’s Net Academy officially begin?</summary>
+        <p>
+          The next cohort of Yan’s Net Academy officially begins in <strong>June</strong>. 
+          Once you register, you will receive onboarding guidance, access to preparation materials, 
+          and updates before the program starts.
+        </p>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Do I need a laptop to participate?</summary>
+        <p>
+          No, you do not need a laptop. All our programs are <strong>phone-first</strong> and designed 
+          to work efficiently on smartphones using accessible and free tools like Canva, CapCut, and web builders.
+        </p>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>How is the training structured?</summary>
+        <p>
+          The academy is divided into two major phases:
+          <br><br>
+          <strong>• First 3 Months (Foundation Phase):</strong> Personal Development, Finance, and Digital Entrepreneurship.
+          <br>
+          <strong>• Next 3 Months (Intensive Phase):</strong> Practical digital skills like video editing, design, freelancing, and branding.
+          <br><br>
+          Each phase focuses on turning knowledge into <strong>real income opportunities</strong>.
+        </p>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>What is the fee structure and discount system?</summary>
+        <p>
+          Yan’s Net Academy offers a unique and flexible pricing model:
+          <br><br>
+          ✅ <strong>First Month:</strong> Completely FREE (Trial Phase)<br>
+          ✅ <strong>Referral Bonus:</strong> Refer 2 people before your first month ends and your <strong>2nd month becomes FREE</strong><br>
+          ⚠️ <strong>3rd Month:</strong> Payment is compulsory<br><br>
+
+          💰 <strong>Standard Fee:</strong> ₦10,000 per month (for continuing students)<br>
+          💰 <strong>New Students (after promo):</strong> ₦15,000 per month<br><br>
+
+          🎁 <strong>Bonus:</strong> Every student in the first 3 months receives a 
+          <strong>complete business blueprint</strong> to help them start earning immediately.
+        </p>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>What is the AI Launchpad program?</summary>
+        <p>
+          AI Launchpad is a special fast-track program where students learn how to 
+          <strong>build and launch AI-powered apps in just 10 days</strong>. 
+          It is designed for beginners and creators who want to enter the AI space quickly 
+          without coding complexity.
+        </p>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>What is the Yan’s Acad App?</summary>
+        <p>
+          The Yan’s Acad App is an upcoming all-in-one digital platform that will include:
+          <br><br>
+          • Learning system for all courses<br>
+          • AI-powered tools and features<br>
+          • Chat, groups, and community engagement<br>
+          • Digital marketplace features (buy/sell/services)<br>
+          • Content creation and monetization tools<br><br>
+
+          It is designed to combine education, social interaction, and income opportunities 
+          into one powerful ecosystem.
+        </p>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Will I work on real projects?</summary>
+        <p>
+          Yes. Every student will work on <strong>real-life projects</strong> throughout the program. 
+          These projects are designed to build your portfolio and prepare you for freelancing, 
+          business, or employment opportunities.
+        </p>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Can I join from outside Nigeria?</summary>
+        <p>
+          Yes, the academy is fully online and accessible from anywhere in the world. 
+          International students can participate without limitations.
+        </p>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Do you provide certificates?</summary>
+        <p>
+          Yes. Upon completion, students receive a <strong>Yan’s Net Academy Certificate</strong> 
+          along with a portfolio endorsement. Some certificates may also include 
+          <strong>QR-based verification</strong> to showcase your work.
+        </p>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>What opportunities do I get after completing the program?</summary>
+        <p>
+          Graduates gain access to:
+          <br><br>
+          • Freelancing opportunities (Fiverr, Upwork, etc.)<br>
+          • Business startup guidance<br>
+          • Mentorship and alumni community<br>
+          • Collaboration opportunities within the academy ecosystem<br><br>
+
+          Our goal is not just to teach—but to help you <strong>earn and grow</strong>.
+        </p>
+      </details>
+    </div>
+
+  </div>
+</section>
   </main>
   <footer>
     <div class="container"
