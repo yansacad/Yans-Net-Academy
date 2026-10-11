@@ -1,0 +1,27 @@
+# Base44 sandbox environment for this repository.
+#
+# The project is a build-free static website (index.html + style.css + script.js
+# + image assets), so nginx serves the cloned source directly from the bind
+# mount: editing any file is visible on the next page load with no rebuild.
+services:
+  web:
+    image: nginx:alpine
+    restart: on-failure
+    ports:
+      - "3000:80"
+    environment:
+      # Supplied by the platform (value "1" in the sandbox); passed through so the
+      # service, and any future sandbox-only override, can read it.
+      - BASE44_PREVIEW_MODE
+    volumes:
+      # Serve the cloned source, never a baked copy.
+      - .:/usr/share/nginx/html:ro
+      # Self-contained main config (workers run as root because the sandbox
+      # checkout is mode 0700; the source mount itself stays read-only).
+      - ./.base44/nginx.conf:/etc/nginx/nginx.conf:ro
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1/ || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 5s
